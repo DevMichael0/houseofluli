@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House Of Luli</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="main-header" id="mainHeader">
+    <div class="nav-wrap">
+        <a href="index.html" class="logo">House Of<span>Luli</span><span class="dot"></span></a>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-icons">
+            <button class="icon-btn" id="searchToggle" title="Search">🔍</button>
+            <button class="icon-btn" title="Account">👤</button>
+            <button class="icon-btn" id="cartToggle" title="Cart">
+                🛍️
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- CART DRAWER -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+        <h3>Your Bag</h3>
+        <button class="icon-btn" id="closeCart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItemsWrap">
+        <div class="empty-cart">Your bag is empty.</div>
+    </div>
+    <div class="cart-foot">
+        <div class="cart-total-row"><span>Subtotal</span><span id="cartSubtotal">$0.00</span></div>
+        <a href="checkout.html" class="btn btn-primary" style="width:100%;justify-content:center;">Checkout</a>
+    </div>
+</div>
+
+<div class="toast" id="toast"><span class="dot-y"></span><span id="toastMsg">Added to bag</span></div>
+
+<!-- CATEGORIES -->
+<section class="section">
+    <div class="container">
+        <div class="section-head">
+            <span class="tag">Browse</span>
+            <h2>Shop By Category</h2>
+            <p>Find exactly what you're looking for, organized just for you.</p>
+        </div>
+        <div class="cat-grid">
+            <a href="gatekeepers.html" class="cat-card">
+                <img src="images/Three Cross Gatekeeper Loin 2.JPG" alt="Gatekeeper">
+                <div class="overlay"></div>
+                <span>Gatekeepers</span>
+            </a>
+            <a href="prophet.html" class="cat-card">
+                <img src="images/Three Cross Prophet Loin (1).JPG" alt="Prophet">
+                <div class="overlay"></div>
+                <span>Prophets</span>
+            </a>
+            <a href="accessories.html" class="cat-card">
+                <img src="images/Brooch.JPG" alt="Accessories">
+                <div class="overlay"></div>
+                <span>Accessories</span>
+            </a>
+            <a href="perf.html" class="cat-card">
+                <img src="images/perfume.JPG" alt="perfumes">
+                <div class="overlay"></div>
+                <span>Perfumes</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">House Of <span>Luli</span></div>
+                <p style="font-size:14px;color:#9a9aa3;max-width:300px;">Contemporary clothing for the spritual wardrobe. Quality fabrics, timeless design, fast delivery.</p>
+                <div class="social-row">
+                    <a href="#">𝕏</a>
+                    <a href="#">f</a>
+                    <a href="#">📷</a>
+                    <a href="#">▶</a>
+                </div>
+            </div>
+            <div>
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="shop.html?category=gatekeeper">Gatekeeper</a></li>
+                    <li><a href="shop.html?category=prophet">Prophet</a></li>
+                    <li><a href="shop.html?category=accessories">Accessories</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="blog.php">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li>📍 United States</li>
+                    <li>📞 9296478390</li>
+                    <li>✉️ hello@houseofluli.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; <span id="year"></span> Designed By<a href="https://adegbuyi.netlify.app/"> Adegbuyi Michael.</a></div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
